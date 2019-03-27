@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="35a39467-5b73-4724-9c61-494a83716041" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/10.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/12.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/12.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/static/js/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/7.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/count.py" beforeDir="false" afterPath="$PROJECT_DIR$/count.py" afterDir="false" />
     </list>
@@ -27,7 +19,7 @@
     <SUITE FILE_PATH="coverage/project$views.coverage" NAME="views Coverage Results" MODIFIED="1541333739757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/project$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1534836915455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/project$run.coverage" NAME="run Coverage Results" MODIFIED="1534836904734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$lalala.coverage" NAME="lalala Coverage Results" MODIFIED="1552293976859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$lalala.coverage" NAME="lalala Coverage Results" MODIFIED="1553687292370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="project" />
@@ -37,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="154">
               <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
                 <element signature="e#14#33#0" expanded="true" />
@@ -49,11 +41,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/count.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9328">
-              <caret line="508" column="82" selection-start-line="508" selection-start-column="82" selection-end-line="508" selection-end-column="82" />
+            <state relative-caret-position="-1029">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <element signature="e#6425#8847#0" />
+                <element signature="e#453#3642#0" />
+                <element signature="e#3672#3939#0" />
               </folding>
             </state>
           </provider>
@@ -62,17 +55,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="676" selection-start-line="676" selection-end-line="676" />
+            <state relative-caret-position="226">
+              <caret line="322" column="22" selection-start-line="322" selection-start-column="22" selection-end-line="322" selection-end-column="22" />
               <folding>
                 <element signature="e#15#26#0" expanded="true" />
                 <element signature="e#487#1146#0" />
                 <element signature="e#1201#1639#0" />
-                <element signature="e#1979#2682#0" />
                 <element signature="e#2767#4091#0" />
                 <element signature="e#4368#6303#0" />
-                <element signature="e#6703#8743#0" />
-                <element signature="e#9042#9672#0" />
                 <element signature="e#9946#10859#0" />
               </folding>
             </state>
@@ -121,7 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,10 +118,16 @@
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,11 +267,14 @@
       <workItem from="1552219219448" duration="3891000" />
       <workItem from="1552269761593" duration="478000" />
       <workItem from="1552271548156" duration="2144000" />
+      <workItem from="1553438393197" duration="471000" />
+      <workItem from="1553526768903" duration="898000" />
+      <workItem from="1553685014768" duration="3527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70005000" />
+    <option name="totallyTimeSpent" value="74901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,13 +287,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984326" weight="0.16620499" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984326" visible="true" weight="0.16786703" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5015674" side_tool="true" weight="0.16289343" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.032432433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39891893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -320,13 +319,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app/views.py</url>
-          <line>675</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -414,9 +406,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1029">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#453#3642#0" />
+            <element signature="e#3672#3939#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="154">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
             <element signature="e#14#33#0" expanded="true" />
@@ -424,30 +428,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/count.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9328">
-          <caret line="508" column="82" selection-start-line="508" selection-start-column="82" selection-end-line="508" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-            <element signature="e#6425#8847#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="676" selection-start-line="676" selection-end-line="676" />
+        <state relative-caret-position="226">
+          <caret line="322" column="22" selection-start-line="322" selection-start-column="22" selection-end-line="322" selection-end-column="22" />
           <folding>
             <element signature="e#15#26#0" expanded="true" />
             <element signature="e#487#1146#0" />
             <element signature="e#1201#1639#0" />
-            <element signature="e#1979#2682#0" />
             <element signature="e#2767#4091#0" />
             <element signature="e#4368#6303#0" />
-            <element signature="e#6703#8743#0" />
-            <element signature="e#9042#9672#0" />
             <element signature="e#9946#10859#0" />
           </folding>
         </state>

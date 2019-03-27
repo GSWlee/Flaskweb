@@ -238,7 +238,6 @@ return:
         'subject': '信息',
         'time': '20世纪',
         'info': "fsdsdfs",
-        'grade': "20",
         'pic': "/static/img/*.jpg
     }
     如果失败，返回f
@@ -300,7 +299,7 @@ def getinfodata():
     level = pd.read_sql("select * from %s where name = '%s'" % (table[kind], message), con=db)
     level = level.values
     level = level[0][1]
-    datai['grade'] = level + 1
+    #datai['grade'] = level + 1
 
     db.close()
     pic_name = list()
@@ -321,6 +320,7 @@ return:
     example:
     {
         'name': '网卡',
+        'info":"asdfa"
         'piclink':["static/img/a.jpg","static/img/b.jpg"...],
         'vidlink':["static/vid/a.jpg","static/vid/b.jpg"...]
     }
@@ -330,6 +330,15 @@ return:
 @app.route('/api/resource', methods=['GET'])
 def getresourcelink():
     message = request.args.get('message')
+    try:
+        d = docx.opendocx("./app/static/doc/%s_1.docx" % message)
+    except:
+        flag = False
+
+    if flag is False:
+        d = docx.opendocx("./app/static/doc/%s_1.doc" % message)
+
+    doc = docx.getdocumenttext(d)
 
     pic_name = list()
     for file in os.listdir("./app/static/img/"):
@@ -344,6 +353,7 @@ def getresourcelink():
     print(vid_name)
     print(pic_name)
     datai = {"name": message, "piclink": pic_name, "vidlink": vid_name}
+    datai['info'] = doc
     data = json.dumps(datai, ensure_ascii=False)
 
     return data
@@ -477,8 +487,10 @@ def getassessinfo():
     datai['engrander'] = erender[level]
 
     db.close()
-
-    words = "对于该科技事件，通过社会公识度调查，以及咨询了多位领域内的专家对该科技事件进行了评估\n\t最终结果认为，%s科技事件的影响力等级为：%s" % (message, render[level])
+    words = list()
+    words.append("对于该科技事件，通过社会公识度调查，以及咨询了多位领域内的专家对该科技事件进行了评估")
+    words.append("最终结果认为，%s科技事件的影响力为：%f" % (message, level))
+    #words = "对于该科技事件，通过社会公识度调查，以及咨询了多位领域内的专家对该科技事件进行了评估\n最终结果认为，%s科技事件的影响力等级为：%s" % (message, render[level])
 
     datai['brief'] = words
     data = json.dumps(datai, ensure_ascii=False)
@@ -496,7 +508,7 @@ return:
         'engname': 'apple',
         'time':'2018',
         'impact':  6.13,
-        'brief':"对于%s领域内的科技事件，聘请了多位领域内的专家对该领域的科技事件进行了评估\n\t专家认为，%s科技事件的影响等级为：%s"
+        'brief':"对于%s领域内的科技事件，聘请了多位领域内的专家对该领域的科技事件进行了评估\n专家认为，%s科技事件的影响等级为：%s"
     }
     如果失败，返回f
 """
@@ -520,11 +532,14 @@ def getassessgraphinfo():
     datai['impact'] = level
 
     db.close()
-    words = "对于该科技事件，通过社会公识度调查，以及咨询了多位领域内的专家对该科技事件进行了评估\n\t最终结果认为，%s科技事件的影响力为：%f" % (
-        message, level)
+    words = list()
+    words.append("对于该科技事件，通过社会公识度调查，以及咨询了多位领域内的专家对该科技事件进行了评估")
+    words.append("最终结果认为，%s科技事件的影响力为：%f" % (message, level))
 
     datai['brief'] = words
-    data = json.dumps(datai, ensure_ascii=False)
+    data = json.dumps(datai, ensure_ascii
+
+    =False)
 
     return data
 
@@ -609,7 +624,7 @@ def getcodeinfo():
             words = "与聚类簇 %d 的中心距离为 %6f " % (
                 j, abs(random.uniform(abs(level - j - 1) + 5 - i, abs(level - j - 1) - 5 + i)))
             data.append(words)
-    words = "结束评估%s...\n结果为%d" % (name, level)
+    words = "结束评估%s...\n" % (name)
     data.append(words)
     print(data)
     data = json.dumps(data, ensure_ascii=False)
@@ -681,7 +696,7 @@ def getcodegraphinfo():
     data.append("开始迭代：")
     for i in range(random.randint(5, 15)):
         data.append("       计算上一代前导事件分数......")
-    words = "结束评估%s...\n结果为%d" % (name, level)
+    words = "结束评估%s...\n" % (name)
     data.append(words)
     print(data)
     data = json.dumps(data, ensure_ascii=False)
@@ -757,9 +772,9 @@ def getasdatasessdatainfolist():
     print(request)
     render = ["弱", "较弱", "中", "较强", "强"]
     subject = request.args.get('subject')
-    #print(subject)
-    #print("需求的类别是：" + subject)
-    subject="信息"
+    # print(subject)
+    # print("需求的类别是：" + subject)
+    subject = "信息"
     datai = list()
     if subject is "信息":
         db = pymysql.connect("localhost", "root", "123p123p", "temp")
@@ -804,7 +819,6 @@ return:
         'grade':(1.003,....)
     }
 """
-
 
 
 @app.route('/api/assessgraphinfo', methods=['GET'])

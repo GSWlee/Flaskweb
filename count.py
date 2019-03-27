@@ -93,7 +93,7 @@ def readdata(kind):
     # data = pd.read_sql('select * from  7_years ', con=db);
     # namelist = pd.read_sql('select Name from  7_years ', con=db)
     # namelist = namelist.values
-    namelist=list()
+    namelist = list()
     temp = pd.read_sql('select * from allthing', con=db)
     temp = temp.values
     data = list()
@@ -139,7 +139,7 @@ def spider():
             if i in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
                 num.append(i)
         stringnum = ''.join(num)
-        print(stringnum)
+        print(str(name) + " : " + str(stringnum))
         baidu.append([name, int(stringnum)])
         num.clear()
     '''
@@ -209,7 +209,7 @@ def cont():
 
     cursor = db.cursor()
     datai = pd.read_sql('select * from allthing', con=db)
-    datai=datai.values
+    datai = datai.values
     sql = "create table %s(id varchar(50),level int,name varchar(50),en_name varchar(50),time varchar(50) ,subject varchar(50))" % "ething"
     cursor.execute(sql)
     db.commit()
